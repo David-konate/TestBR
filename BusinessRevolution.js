@@ -1,211 +1,183 @@
+let essai = 0
+var countTache = 1
+var count = 0;
+var nbValid = 0;
+var nbNotVal = 0
 
-		let essai = 0
-		var countTache = 1
-		var count = 0;
-		var nbValid = 0;
-		var nbNotVal = 0
 
+const MAX_QUESTIONS = 7;
 
-		const MAX_QUESTIONS = 7;
-
-		document.getElementById("BtnReset").addEventListener("click", function() {
-		 	for (var i = 1; i < MAX_QUESTIONS+1 ; i++) {
-		 		document.getElementById('tache'+ i).checked = false
-		 	}
-		 	nbValid=0
-		progressBarFull1.style.width = `${Math.round(
-		   (nbValid / MAX_QUESTIONS) * 100
+document.getElementById("BtnReset").addEventListener("click", function() {
+	for (var i = 1; i < MAX_QUESTIONS+1 ; i++) {
+		document.getElementById('tache'+ i).checked = false
+	}
+	nbValid=0
+	progressBarFull1.style.width = `${Math.round(
+		(nbValid / MAX_QUESTIONS) * 100
 		)}%`;
-		 	 progressBarFull1.innerHTML = `${Math.round(
-		    	(nbValid / MAX_QUESTIONS) * 100
-		 )}%`;
-		}
-		);
-
-		function move1(){
-
-			const progressBarFull1 =
-			document.getElementById('progressBarFull1');
-
-			if (document.getElementById('tache1').checked === true){
-					nbValid++
-			}
-			if (document.getElementById('tache1').checked === false){
-					nbValid--
-			}
+	progressBarFull1.innerHTML = `${Math.round(
+		(nbValid / MAX_QUESTIONS) * 100
+		)}%`;
+}
 
 
-		progressBarFull1.style.width = `${Math.round(
-	    (nbValid / MAX_QUESTIONS) * 100
-	  )}%`;
-	  progressBarFull1.innerHTML = `${Math.round(
-	    (nbValid / MAX_QUESTIONS) * 100
-	  )}%`;
+function move1(){
 
-		if ((nbValid / MAX_QUESTIONS) === 1 ) {
-			alert("F\u00e9licitation !!!")
-		}
-		}
-		/*--------------------------------------------------------------*/
+	const progressBarFull1 =
+	document.getElementById('progressBarFull1');
 
-		function move2(){
+	if (document.getElementById('tache1').checked === true){
+		nbValid++
+	}
+	if (document.getElementById('tache1').checked === false){
+		nbValid--
+	}
+	progressBarFull1.style.width = `${Math.round(
+		(nbValid / MAX_QUESTIONS) * 100
+		)}%`
+	progressBarFull1.innerHTML = `${Math.round(
+		(nbValid / MAX_QUESTIONS) * 100
+		)}%`
 
-			const progressBarFull1 =
-			document.getElementById('progressBarFull1');
+	if ((nbValid / MAX_QUESTIONS) === 1 ) {
+		alert("F\u00e9licitation !!!")
+	}
+}
 
-			if (document.getElementById('tache2').checked === true){
-					nbValid++
-			}
-			if (document.getElementById('tache2').checked === false){
-					nbValid--
-			}
+function move2(){
 
-			
-		progressBarFull1.style.width = `${Math.round(
-	    (nbValid / MAX_QUESTIONS) * 100
-	  )}%`;
-	  progressBarFull1.innerHTML = `${Math.round(
-	    (nbValid / MAX_QUESTIONS) * 100
-	  )}%`;
-		if ((nbValid / MAX_QUESTIONS) === 1 ) {
-			alert("F\u00e9licitation !!!")
-		}
+	const progressBarFull1 =
+	document.getElementById('progressBarFull1')
 
-		}
+	if (document.getElementById('tache2').checked === true){
+		nbValid++
+	}
+	if (document.getElementById('tache2').checked === false){
+		nbValid--
+	}
+	progressBarFull1.style.width = `${Math.round(
+		(nbValid / MAX_QUESTIONS) * 100
+		)}%`
+	progressBarFull1.innerHTML = `${Math.round(
+		(nbValid / MAX_QUESTIONS) * 100
+		)}%`;
+	if ((nbValid / MAX_QUESTIONS) === 1 ) {
+		alert("F\u00e9licitation !!!")
+	}
+}
 
+function move3(){
 
-		function move3(){
+	const progressBarFull1 =
+	document.getElementById('progressBarFull1');
 
-			const progressBarFull1 =
-			document.getElementById('progressBarFull1');
+	if (document.getElementById('tache3').checked === true){
+		nbValid++
+	}
+	if (document.getElementById('tache3').checked === false){
+		nbValid--
+	}
 
-			if (document.getElementById('tache3').checked === true){
-					nbValid++
-			}
-			if (document.getElementById('tache3').checked === false){
-					nbValid--
-			}
+	progressBarFull1.style.width = `${Math.round(
+		(nbValid / MAX_QUESTIONS) * 100
+		)}%`;
+	progressBarFull1.innerHTML = `${Math.round(
+		(nbValid / MAX_QUESTIONS) * 100
+		)}%`;
+	if ((nbValid / MAX_QUESTIONS) === 1 ) {
+		alert("F\u00e9licitation !!!")
+	}
+}
 
-		progressBarFull1.style.width = `${Math.round(
-	    (nbValid / MAX_QUESTIONS) * 100
-	  )}%`;
-	  progressBarFull1.innerHTML = `${Math.round(
-	    (nbValid / MAX_QUESTIONS) * 100
-	  )}%`;
-		if ((nbValid / MAX_QUESTIONS) === 1 ) {
-			alert("F\u00e9licitation !!!")
-		}
+function move4(){
 
+	const progressBarFull1 =
+	document.getElementById('progressBarFull1');
 
-		/*--------------------------------------------------------------*/
+	if (document.getElementById('tache4').checked === true){
+		nbValid++
+	}
+	if (document.getElementById('tache4').checked === false){
+		nbValid--
+	}
 
+	progressBarFull1.style.width = `${Math.round(
+		(nbValid / MAX_QUESTIONS) * 100
+		)}%`;
+	progressBarFull1.innerHTML = `${Math.round(
+		(nbValid / MAX_QUESTIONS) * 100
+		)}%`;
+	if ((nbValid / MAX_QUESTIONS) === 1 ) {
+		alert("F\u00e9licitation !!!")
+	}
+}
 
+function move5(){
 
-		}
-		function move4(){
+	const progressBarFull1 =
+	document.getElementById('progressBarFull1');
 
-			const progressBarFull1 =
-			document.getElementById('progressBarFull1');
+	if (document.getElementById('tache5').checked === true){
+		nbValid++
+	}
+	if (document.getElementById('tache5').checked === false){
+		nbValid--
+	}
 
-			if (document.getElementById('tache4').checked === true){
-					nbValid++
-			}
-			if (document.getElementById('tache4').checked === false){
-					nbValid--
-			}
+	progressBarFull1.style.width = `${Math.round(
+		(nbValid / MAX_QUESTIONS) * 100
+		)}%`;
+	progressBarFull1.innerHTML = `${Math.round(
+		(nbValid / MAX_QUESTIONS) * 100
+		)}%`;
+	if ((nbValid / MAX_QUESTIONS) === 1 ) {
+		alert("F\u00e9licitation !!!")
+	}
+}
+function move6(){
 
-		progressBarFull1.style.width = `${Math.round(
-	    (nbValid / MAX_QUESTIONS) * 100
-	  )}%`;
-	  progressBarFull1.innerHTML = `${Math.round(
-	    (nbValid / MAX_QUESTIONS) * 100
-	  )}%`;
-		if ((nbValid / MAX_QUESTIONS) === 1 ) {
-			alert("F\u00e9licitation !!!")
-		}
+	const progressBarFull1 =
+	document.getElementById('progressBarFull1');
 
+	if (document.getElementById('tache6').checked === true){
+		nbValid++
+	}
+	if (document.getElementById('tache6').checked === false){
+		nbValid--
+	} 
 
-		/*--------------------------------------------------------------*/
+	progressBarFull1.style.width = `${Math.round(
+		(nbValid / MAX_QUESTIONS) * 100
+		)}%`;
+	progressBarFull1.innerHTML = `${Math.round(
+		(nbValid / MAX_QUESTIONS) * 100
+		)}%`;
+	if ((nbValid / MAX_QUESTIONS) === 1 ) {
+		alert("F\u00e9licitation !!!")
+	}
+}
 
+function move7(){
 
+	const progressBarFull1 =
+	document.getElementById('progressBarFull1');
 
-		}
-		function move5(){
+	if (document.getElementById('tache7').checked === true){
+		nbValid++
+	}
+	if (document.getElementById('tache7').checked === false){
+		nbValid--
+	}
 
-			const progressBarFull1 =
-			document.getElementById('progressBarFull1');
-
-			if (document.getElementById('tache5').checked === true){
-					nbValid++
-			}
-			if (document.getElementById('tache5').checked === false){
-					nbValid--
-			}
-
-		progressBarFull1.style.width = `${Math.round(
-	    (nbValid / MAX_QUESTIONS) * 100
-	  )}%`;
-	  progressBarFull1.innerHTML = `${Math.round(
-	    (nbValid / MAX_QUESTIONS) * 100
-	  )}%`;
-		if ((nbValid / MAX_QUESTIONS) === 1 ) {
-			alert("F\u00e9licitation !!!")
-		}
-
-
-		/*--------------------------------------------------------------*/
-
-
-
-		}
-		function move6(){
-
-			const progressBarFull1 =
-			document.getElementById('progressBarFull1');
-
-			if (document.getElementById('tache6').checked === true){
-					nbValid++
-			}
-			if (document.getElementById('tache6').checked === false){
-					nbValid--
-			} 
-
-		progressBarFull1.style.width = `${Math.round(
-	    (nbValid / MAX_QUESTIONS) * 100
-	  )}%`;
-	  progressBarFull1.innerHTML = `${Math.round(
-	    (nbValid / MAX_QUESTIONS) * 100
-	  )}%`;
-		if ((nbValid / MAX_QUESTIONS) === 1 ) {
-			alert("F\u00e9licitation !!!")
-		}
-
-
-		/*--------------------------------------------------------------*/
-
-		}
-		function move7(){
-
-			const progressBarFull1 =
-			document.getElementById('progressBarFull1');
-
-			if (document.getElementById('tache7').checked === true){
-					nbValid++
-			}
-			if (document.getElementById('tache7').checked === false){
-					nbValid--
-			}
-
-		progressBarFull1.style.width = `${Math.round(
-	    (nbValid / MAX_QUESTIONS) * 100
-	  )}%`;
-	  progressBarFull1.innerHTML = `${Math.round(
-	    (nbValid / MAX_QUESTIONS) * 100
-	  )}%`;
-		if ((nbValid / MAX_QUESTIONS) === 1 ) {
-			alert("F\u00e9licitation !!!")
-		}
-
-		}
+	progressBarFull1.style.width = `${Math.round(
+		(nbValid / MAX_QUESTIONS) * 100
+		)}%`;
+	progressBarFull1.innerHTML = `${Math.round(
+		(nbValid / MAX_QUESTIONS) * 100
+		)}%`;
+	if ((nbValid / MAX_QUESTIONS) === 1 ) {
+		alert("F\u00e9licitation !!!")
+	}
+}
 
 

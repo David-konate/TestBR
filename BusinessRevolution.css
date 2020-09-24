@@ -27,7 +27,7 @@ ul {
   border-color: #02043E;
   margin-left: 395px;
   margin-right: 395px;
- 
+  
 }
 
 /* Style the list items */
@@ -87,7 +87,7 @@ input{
 
 .selection {
   margin-left: 100px;
-border-radius: 25px;
+  border-radius: 25px;
 }
 
 #listing {
@@ -95,41 +95,41 @@ border-radius: 25px;
 }
 
 #progressBar1 {
-      width: 100%;
+  width: 100%;
   background-color: #AAAAB5;
 }
 
 
 #progressBarFull1 {
-       width: 1%;
-  height: 30px;
-  background-color: green;
+ width: 1%;
+ height: 30px;
+ background-color: green;
 }
 
 .styled {
-    border: 450px;
-    margin-left: 700px; 
-    line-height: 2.5;
-    padding: 0 20px;
-    font-size: 1rem;
-    text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 10px;
-    background-color: rgba(220, 0, 0, 1);
-    background-image: linear-gradient(to top left,
-                                      rgba(0, 0, 0, .2),
-                                      rgba(0, 0, 0, .2) 30%,
-                                      rgba(0, 0, 0, 0));
-    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                inset -2px -2px 3px rgba(0, 0, 0, .6);
+  border: 450px;
+  margin-left: 700px; 
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgba(220, 0, 0, 1);
+  background-image: linear-gradient(to top left,
+    rgba(0, 0, 0, .2),
+    rgba(0, 0, 0, .2) 30%,
+    rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+  inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
 
 .styled:hover {
-    background-color: rgba(255, 0, 0, 1);
+  background-color: rgba(255, 0, 0, 1);
 }
 
 .styled:active {
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                inset 2px 2px 3px rgba(0, 0, 0, .6);
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+  inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
