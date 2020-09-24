@@ -1,0 +1,135 @@
+
+body {
+  margin: 0;
+  min-width: 250px;
+
+}
+
+/* Include the padding and border in an element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  margin: 5px;
+  background-color: 0828E2;
+}
+
+
+/* Remove margins and padding from the list */
+ul {
+ 
+  margin: 0;
+  padding: 0;
+  border-radius: 1% 1% 1% 1%;
+  background-color : #02043E;
+  border-style: inset;
+  border-color: #02043E;
+  margin-left: 395px;
+  margin-right: 395px;
+ 
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+
+
+  
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+input{
+  margin-left: 400px;
+}
+
+/* Style the header */
+.header {
+  background-color: #02043E;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.selection {
+  margin-left: 100px;
+border-radius: 25px;
+}
+
+#listing {
+  border-radius: 25px;
+}
+
+#progressBar1 {
+      width: 100%;
+  background-color: #AAAAB5;
+}
+
+
+#progressBarFull1 {
+       width: 1%;
+  height: 30px;
+  background-color: green;
+}
+
+.styled {
+    border: 450px;
+    margin-left: 700px; 
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
